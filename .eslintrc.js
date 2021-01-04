@@ -12,5 +12,8 @@ module.exports = {
       'error',
       { allow: ['warn', 'error'] },
     ],
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': 'off'
   },
 };
