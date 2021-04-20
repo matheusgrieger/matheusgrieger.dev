@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useHoverDirty } from 'react-use';
 import { motion, Variants } from 'framer-motion';
 import css from 'styled-jsx/css';
-import { colorPalette } from '../theme';
+import { colorPalette, zIndex } from '../theme';
 
 const logoVariants: Variants = {
   hidden: {
@@ -37,15 +37,17 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <nav role="navigation" aria-label="main navigation">
-        <Link href="/">
-          <a title="Matheus Grieger Dev" ref={brandRef}>
-            M
-            <motion.span variants={logoVariants} initial="hidden" animate={isHovering ? 'visible' : 'hidden'} className={className}>atheus</motion.span>
-            G
-            <motion.span variants={logoVariants} initial="hidden" animate={isHovering ? 'visible' : 'hidden'} className={className}>rieger</motion.span>
-            .DEV
-          </a>
-        </Link>
+        <div className="nav-wrapper">
+          <Link href="/">
+            <a title="Matheus Grieger Dev" ref={brandRef}>
+              M
+              <motion.span variants={logoVariants} initial="hidden" animate={isHovering ? 'visible' : 'hidden'} className={className}>atheus</motion.span>
+              G
+              <motion.span variants={logoVariants} initial="hidden" animate={isHovering ? 'visible' : 'hidden'} className={className}>rieger</motion.span>
+              .DEV
+            </a>
+          </Link>
+        </div>
       </nav>
       {children}
       <style jsx>
@@ -53,10 +55,16 @@ export default function Layout({ children }: LayoutProps) {
         nav {
           position: fixed;
           top: 2rem;
-          left: 0;
+          left: -1rem;
           width: auto;
-          background-color: ${colorPalette.blackOlive};
+          z-index: ${zIndex.navbar};
+          filter: drop-shadow(2px 2px ${colorPalette.white});
+        }
+
+        .nav-wrapper {
           clip-path: polygon(0 0, 100% 0%, calc(100% - 1.5rem) 100%, 0% 100%);
+          background-color: ${colorPalette.blackOlive};
+          padding-left: 1rem;
         }
 
         a {

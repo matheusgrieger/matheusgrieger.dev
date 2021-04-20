@@ -34,3 +34,7 @@ export const breakpoints = {
   widescreen: 1152 + 2 * gap,
   fullhd: 1344 + 2 * gap,
 };
+
+export const zIndex = {
+  navbar: 1000,
+};

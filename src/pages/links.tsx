@@ -1,11 +1,20 @@
+import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Layout from '../common/components/Layout';
 import { colorPalette } from '../common/theme';
 
 export default function Home() {
+  const { locale } = useRouter();
+
   return (
     <Layout>
+      <Head>
+        <link rel="alternate" hrefLang="pt-BR" href="/pt-br/links" />
+        <link rel="alternate" hrefLang="en-US" href="/links" />
+        <link rel="alternate" hrefLang="x-default" href="/links" />
+      </Head>
       <main>
-        <h1>Hello world</h1>
+        {locale}
       </main>
 
       <style jsx>
