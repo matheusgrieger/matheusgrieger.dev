@@ -1,16 +1,28 @@
 module.exports = {
-  extends: ['airbnb-typescript'],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'next/core-web-vitals', 'plugin:prettier/recommended', 'prettier'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
   },
+  plugins: ['prettier'],
   rules: {
+    'max-len': ['error', { code: 120, ignoreUrls: true }],
     'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
-    'class-methods-use-this': 'off',
     'react/prop-types': 'off',
-    'no-console': [
+    'react/react-in-jsx-scope': 'off',
+    'import/order': [
       'error',
-      { allow: ['warn', 'error'] },
+      {
+        groups: [['builtin', 'external', 'internal']],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'external',
+            position: 'after',
+          },
+        ],
+      },
     ],
   },
 };
