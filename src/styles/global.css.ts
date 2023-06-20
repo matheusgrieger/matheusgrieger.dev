@@ -1,4 +1,5 @@
 import { globalStyle } from '@vanilla-extract/css';
+import theme from './theme.css';
 
 /**
  * Modern CSS Reset adapted from Josh W Comeau
@@ -20,6 +21,8 @@ globalStyle('html, body', {
 globalStyle('body', {
   lineHeight: 1.5,
   WebkitFontSmoothing: 'antialiased',
+  fontFamily: theme.fontFamilies.default,
+  fontSize: theme.fontSizes.base,
 });
 
 globalStyle('img, picture, video, canvas, svg', {
@@ -33,9 +36,4 @@ globalStyle('input, button, textarea, select', {
 
 globalStyle('p, h1, h2, h3, h4, h5, h6', {
   overflowWrap: 'break-word',
-});
-
-globalStyle('#__next', {
-  isolation: 'isolate',
-  minHeight: '100%',
 });

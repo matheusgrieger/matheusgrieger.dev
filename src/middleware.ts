@@ -22,5 +22,5 @@ export const middleware: NextMiddleware = (request) => {
 };
 
 export const config = {
-  matcher: ['/((?!_next).*)', '/'],
+  matcher: ['/((?!_next|.*\\.).*)', '/'],
 };
