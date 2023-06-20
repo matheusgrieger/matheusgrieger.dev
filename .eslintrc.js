@@ -24,5 +24,7 @@ module.exports = {
         ],
       },
     ],
+    'react/require-default-props': 'off',
+    'no-restricted-exports': 'off'
   },
 };
