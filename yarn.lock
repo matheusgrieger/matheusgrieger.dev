@@ -467,6 +467,13 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.43.0.tgz#559ca3d9ddbd6bf907ad524320a0d14b85586af0"
   integrity sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==
 
+"@formatjs/intl-localematcher@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-localematcher/-/intl-localematcher-0.4.0.tgz#63bbc37a7c3545a1bf1686072e51d9a3aed98d6b"
+  integrity sha512-bRTd+rKomvfdS4QDlVJ6TA/Jx1F2h/TBVO5LjvhQ7QPPHp19oPNMIum7W2CMEReq/zPxpmCeB31F9+5gl/qtvw==
+  dependencies:
+    tslib "^2.4.0"
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
@@ -635,6 +642,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
+"@types/negotiator@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@types/negotiator/-/negotiator-0.6.1.tgz#4c75543f6ef87f427f4705e731a933595b7397f5"
+  integrity sha512-c4mvXFByghezQ/eVGN5HvH/jI63vm3B7FiE81BUzDAWmuiohRecCO6ddU60dfq29oKUMiQujsoB2h0JQC7JHKA==
+
 "@types/node@^18.14.6":
   version "18.16.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.18.tgz#85da09bafb66d4bc14f7c899185336d0c1736390"
@@ -762,7 +774,7 @@
   dependencies:
     "@babel/core" "^7.20.7"
 
-"@vanilla-extract/css@^1.10.0", "@vanilla-extract/css@^1.9.5":
+"@vanilla-extract/css@^1.10.0", "@vanilla-extract/css@^1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.11.1.tgz#0669e0b237d50561d669d8be6246dd601552be1a"
   integrity sha512-iLalh4K4sXgkfzsiFUsiek4IY1/N4jtJKdr1ubpyszPE7W7G2v+DAl8KcmKkRA6vS7k5mFNW34e4fNki6T2cbQ==
@@ -798,7 +810,7 @@
     vite "^4.1.4"
     vite-node "^0.28.5"
 
-"@vanilla-extract/next-plugin@^2.1.1":
+"@vanilla-extract/next-plugin@^2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.1.3.tgz#ac91bb4b36835a94b1dfa67e9e1f7ef73dc17b0d"
   integrity sha512-jOxWY3HSECKjTDKxlUvQATwgO2uY+6x4aJ/FrtRK7IaSa9u54BamAxiKOZ7vUVQj2roB3jvh9QOleCuJ4eWVyQ==
@@ -2539,7 +2551,12 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next@^13.2.3:
+negotiator@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
+  integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
+
+next@^13.4.6:
   version "13.4.6"
   resolved "https://registry.yarnpkg.com/next/-/next-13.4.6.tgz#ebe52f5c74d60176d45b45e73f25a51103713ea4"
   integrity sha512-sjVqjxU+U2aXZnYt4Ud6CTLNNwWjdSfMgemGpIQJcN3Z7Jni9xRWbR0ie5fQzCg87aLqQVhKA2ud2gPoqJ9lGw==

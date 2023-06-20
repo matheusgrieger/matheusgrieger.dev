@@ -1,5 +1,7 @@
-import { createGlobalTheme } from '@vanilla-extract/css';
+import { createTheme } from '@vanilla-extract/css';
 
-const theme = createGlobalTheme(':root', {});
+const [themeClass, theme] = createTheme({});
 
 export default theme;
+
+export { themeClass };
