@@ -21,15 +21,16 @@ const fontSizes = {
  * Font families
  */
 const fontFamilies = {
-  default: 'sans-serif',
-  display: 'var(--font-ubuntu)',
+  default: 'Archivo, sans-serif',
+  display: 'Ubuntu, sans-serif',
 };
 
 /**
  * Font weights
  */
 const fontWeights = {
-  light: '300',
+  regular: '300',
+  bold: '700',
 };
 
 const [themeClass, theme] = createTheme({
